@@ -1,6 +1,6 @@
 # MobilityEye
 ##### HTML Form Builder using JSON.
-- [x] The valid JSON data is input to render HTML page.
+- [x] The valid JSON data is input to render HTML page ([Sample JSON](https://github.com/priyankajindal92/MobilityEye/blob/master/Sample.Json)).
 - [x] If data input is not valid JSON it will thow error.
 - [x] The rendered page is anserable by the user.
 - [x] A Web API method is included to receive the answers from the dynamically rendered form.
