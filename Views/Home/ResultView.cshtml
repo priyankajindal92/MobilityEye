@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Result View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>V.I.E.W</h4>
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id #</th>
+                <th scope="col">JSON Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (ViewData["data"] != null)
+            {
+                @foreach (var result in (Dictionary<string, object>)ViewData["data"])
+                {
+                    @Html.Raw($"<tr><th scope=\"row\">{result.Key}</th><td>{result.Value}</td></tr>");
+                }
+            }
+        </tbody>
+    </table>
+</div>
+<div class="dropright">
+    @Html.ActionLink("Generate Form", "Index", "Home", null, new { @class = "btn btn-primary" })
+</div>
